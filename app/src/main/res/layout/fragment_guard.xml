@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background_color"
-    tools:context=".GuardScreen">
+    android:background="@color/main_background_color">
 
     <TextView
         android:id="@+id/tv_security"
@@ -31,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_security" />
 
     <TextView
-        android:id="@+id/tv_sos"
+        android:id="@+id/tv_person_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16_dp"
@@ -55,7 +54,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/ivSos"
         app:layout_constraintStart_toStartOf="@+id/pink_card"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sos" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_person_name" />
 
     <ImageView
         android:id="@+id/ivSos"

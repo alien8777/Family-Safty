@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val bottomBar = findViewById<BottomNavigationView>(R.id.btmnavigationView)
-
         bottomBar.setOnItemSelectedListener {
             when(it.itemId)
             {
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+        bottomBar.selectedItemId = R.id.nav_home
     }
 
     private fun inflateFragment(fragment : Fragment) {
